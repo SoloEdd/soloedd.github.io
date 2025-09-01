@@ -1,6 +1,6 @@
 /* Estilos para el contenedor principal */
 .hero-section {
-    background-image: url('barberiaphoto.jpg'); 
+    background-image: url('../img/barberiaphoto.jpg'); 
     background-size: cover; /* La imagen cubrirá todo el contenedor */
     background-position: center; /* Centra la imagen */
     height: 100vh; /* El contenedor ocupará el 100% de la altura de la pantalla */

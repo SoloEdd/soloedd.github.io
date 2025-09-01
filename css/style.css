@@ -1,0 +1,32 @@
+/* Estilos para el contenedor principal */
+.hero-section {
+    background-image: url('barberiaphoto.jpg'); 
+    background-size: cover; /* La imagen cubrirá todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    height: 100vh; /* El contenedor ocupará el 100% de la altura de la pantalla */
+    color: #fff; /* Color del texto blanco */
+    display: flex; /* Uso de Flexbox para centrar el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+/* Estilos para el contenido dentro del contenedor */
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Un fondo semitransparente (0.5) para que el texto se lea mejor */
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/* Estilos para el botón "Reservar Ahora" */
+.btn-reservar {
+    display: inline-block;
+    background-color: #ff0000; /* Color del botón (siguiendo el patron de color y diseño) */
+    color: #000;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}

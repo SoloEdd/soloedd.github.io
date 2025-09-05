@@ -10,11 +10,12 @@
     <header>
         <!--Elementos que construiran la barra de navegacion de la pagina web-->
         <nav>
-            <a href="index.html"><img src="img/vikingoslogo.png" alt="Logo de Vikingos Barber Studio" width="50" height="50"></a><!--Logotipo del negocio-->
+            <a href="index.html"><img src="img/vikingoslogo.png" alt="Logo de Vikingos Barber Studio" width="100" height="100"></a><!--Logotipo del negocio-->
             <ul> <!--Listado para la navegacion de la pagina-->
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Galería</a></li>
-                <li><a href="#">Equipo</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#horario">Horario</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#equipo">Equipo</a></li>
                 <li><a href="#">Contacto</a></li>
                 <li><a class = 'btn-reservar' href="#">Reservar ahora</a></li>
             </ul>
@@ -32,7 +33,7 @@
         </div>
 
         <!--Seccion relacionada a los servicios-->
-        <section class="services-section">
+        <section id= "servicios" class="services-section">
             <h2>Nuestros Servicios</h2>
             <dl class="services-list">
                 <div class="service-item">
@@ -55,7 +56,7 @@
         </section>
 
         <!--Tabla para mostrar horario de atencion-->
-        <section class="hours-section">
+        <section id="horario" class="hours-section">
             <h2>Horarios de Atención</h2>
             <table class="schedule-table">
                 <tbody>
@@ -92,7 +93,7 @@
         </section>
 
         <!--Galeria enfocada a mostrar el trabajo realizado en el establecimiento-->
-        <section class="gallery-section">
+        <section id="galeria" class="gallery-section">
             <h2>Galería</h2>
             <div class="gallery-container">
                 <img src="img/haircut1.jpg" alt="Wolft cut hombre" width="200" height="200"> <!--el atributo alt relaciona la imagen con el tipo de corte-->
@@ -103,7 +104,7 @@
 
 
         <!--Seccion "Nuestro equipo" encargado de mostrar a los integrantes del negocio-->
-        <section class="team-section">
+        <section id="equipo" class="team-section">
             <h2>Nuestro Equipo</h2>
             <div class="team-container">
                 <div class="team-member">
@@ -125,7 +126,7 @@
         </section>
 
         <!--Area de formulario para obtener informacion de potenciales clientes-->
-        <section class="contact-section">
+        <section  class="contact-section">
             <h2>Contacto</h2>
             <form class="contact-form">
                 <label for="nombre">Nombre</label>

@@ -1,32 +1,347 @@
-/* Estilos para el contenedor principal */
-.hero-section {
-    background-image: url('../img/barberiaphoto.jpg'); 
-    background-size: cover; /* La imagen cubrirá todo el contenedor */
-    background-position: center; /* Centra la imagen */
-    height: 100vh; /* El contenedor ocupará el 100% de la altura de la pantalla */
-    color: #fff; /* Color del texto blanco */
-    display: flex; /* Uso de Flexbox para centrar el contenido */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
-    text-align: center; /* Alinea el texto al centro */
+/*
+    ------------------------------------------------------
+    Estilos Generales y Tipografía
+    ------------------------------------------------------
+*/
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
+    background-color: #221111;
+    color: #f0f0f0;
 }
 
-/* Estilos para el contenido dentro del contenedor */
-.hero-content {
-    background-color: rgba(0, 0, 0, 0.5); /* Un fondo semitransparente (0.5) para que el texto se lea mejor */
-    padding: 2rem;
-    border-radius: 10px;
+h1, h2, h3 {
+    text-align: center;
+    color: #f0f0f0;
 }
 
-/* Estilos para el botón "Reservar Ahora" */
+section {
+    padding: 60px 20px;
+}
+
+/*
+    ------------------------------------------------------
+    Header y Navegación
+    ------------------------------------------------------
+*/
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #221111;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #482323;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+header nav li a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+header nav li a:hover {
+    color: #e4c483;
+}
+
 .btn-reservar {
-    display: inline-block;
-    background-color: #ff0000; /* Color del botón (siguiendo el patron de color y diseño) */
-    color: #000;
-    text-decoration: none; /* Elimina el subrayado del enlace */
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-top: 20px;
-    font-weight: bold;
+    background-color: #ec1313 !important;
+    color: #fff !important;
+    padding: 10px 20px !important;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.btn-reservar:hover {
+    background-color: #ff3333 !important;
+}
+
+/*
+    ------------------------------------------------------
+    Banner Principal (Hero Section)
+    ------------------------------------------------------
+*/
+.hero-section {
+    background-image: url('../img/barberiaphoto.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: #ffffff;
     text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #f0f0f0;
+}
+
+/*
+    ------------------------------------------------------
+    Sección de Servicios
+    ------------------------------------------------------
+*/
+.services-section h2 {
+    color: #f0f0f0;
+    margin-bottom: 40px;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0;
+}
+
+.service-item {
+    background-color: #331919;
+    border: 1px solid #673232;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.service-item dt h3 {
+    margin-top: 0;
+    color: #e4c483;
+}
+
+.service-item dd p {
+    color: #c99292;
+    font-size: 14px;
+}
+
+/*
+    ------------------------------------------------------
+    Horarios de Atención
+    ------------------------------------------------------
+*/
+.hours-section h2 {
+    color: #f0f0f0;
+    margin-bottom: 30px;
+}
+
+.schedule-table {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.schedule-table th,
+.schedule-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #482323;
+    color: #f0f0f0;
+}
+
+.schedule-table th {
+    background-color: #221111;
+    font-weight: normal;
+    color: #f0f0f0;
+}
+
+.schedule-table td {
+    background-color: #221111;
+    color: #c99292;
+}
+
+/*
+    ------------------------------------------------------
+    Galería
+    ------------------------------------------------------
+*/
+.gallery-section h2 {
+    color: #f0f0f0;
+    margin-bottom: 30px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/*
+    ------------------------------------------------------
+    Equipo
+    ------------------------------------------------------
+*/
+.team-section {
+    text-align: center;
+}
+
+.team-section h2 {
+    color: #f0f0f0;
+    margin-bottom: 40px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #331919;
+    border: 1px solid #673232;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #e4c483;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    margin: 5px 0;
+    color: #e4c483;
+}
+
+.team-member p {
+    color: #c99292;
+}
+
+/*
+    ------------------------------------------------------
+    Contacto (Formulario)
+    ------------------------------------------------------
+*/
+.contact-section h2 {
+    color: #f0f0f0;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-weight: 500;
+    color: #f0f0f0;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #482323;
+    background-color: #331919;
+    color: #f0f0f0;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    min-height: 120px;
+}
+
+.contact-form button {
+    background-color: #ec1313;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+}
+
+.contact-form button:hover {
+    background-color: #ff3333;
+}
+
+/*
+    ------------------------------------------------------
+    Footer
+    ------------------------------------------------------
+*/
+.main-footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #1a1a1a;
+    border-top: 1px solid #333;
+}
+
+.main-footer .footer-links a {
+    color: #e4c483;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.main-footer .footer-links a:hover {
+    color: #fff;
 }

@@ -12,7 +12,7 @@ body {
 
 h1, h2, h3 {
     text-align: center;
-    color: #f0f0f0;
+    color: #e4c483;
 }
 
 section {
@@ -58,7 +58,7 @@ header nav li a {
 }
 
 header nav li a:hover {
-    color: #ff0000;
+    color: #e4c483;
 }
 
 .btn-reservar {
@@ -76,7 +76,7 @@ header nav li a:hover {
 
 /*
     ------------------------------------------------------
-    Banner Principal (Hero Section)
+    Banner Principal 
     ------------------------------------------------------
 */
 .hero-section {
@@ -112,7 +112,7 @@ header nav li a:hover {
 .hero-content h1 {
     font-size: 3.5em;
     margin-bottom: 20px;
-    color: #ffffff;
+    color: #e4c483;
     text-transform: uppercase;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -343,5 +343,5 @@ header nav li a:hover {
 }
 
 .main-footer .footer-links a:hover {
-    color: #fff;
+    color: #6643d6;
 }

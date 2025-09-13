@@ -4,35 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vikingos Barber Studio</title>
-    <link rel="stylesheet" href="css/style.css"> <!--Enlace con la hoja de estilos-->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <!--Elementos que construiran la barra de navegacion de la pagina web-->
         <nav>
             <a href="index.html"><img src="img/vikingoslogo.png" alt="Logo de Vikingos Barber Studio" width="100" height="100"></a><!--Logotipo del negocio-->
-            <ul> <!--Listado para la navegacion de la pagina-->
+            <ul> 
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#horario">Horario</a></li>
                 <li><a href="#galeria">Galería</a></li>
                 <li><a href="#equipo">Equipo</a></li>
                 <li><a href="#contacto">Contacto</a></li>
-                <li><a class = 'btn-reservar' href="#">Reservar ahora</a></li>
+                <li><a class = 'btn-reservar' href="reservar.html">Reservar ahora</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!--Banner principal y bienvenida de la pagina en base al diseño propuesto implementando CSS-->
-        <div class="hero-section">
+        <div class="hero-section" id="reservar">
             <div class="hero-content">
                 <h1>Vikingos Barber Studio</h1>
                 <p>Donde la tradición se encuentra con el estilo moderno. Experimenta cortes y afeitados de primera clase en un ambiente único.</p>
-                <a href="#" class="btn-reservar">Reservar Ahora</a>
+                <a href="reservar.html" class="btn-reservar">Reservar Ahora</a>
             </div>
         </div>
 
-        <!--Seccion relacionada a los servicios-->
         <section id= "servicios" class="services-section">
             <h2>Nuestros Servicios</h2>
             <dl class="services-list">
@@ -55,7 +52,6 @@
             </dl>
         </section>
 
-        <!--Tabla para mostrar horario de atencion-->
         <section id="horario" class="hours-section">
             <h2>Horarios de Atención</h2>
             <table class="schedule-table">
@@ -92,7 +88,6 @@
             </table>
         </section>
 
-        <!--Galeria enfocada a mostrar el trabajo realizado en el establecimiento-->
         <section id="galeria" class="gallery-section">
             <h2>Galería</h2>
             <div class="gallery-container">
@@ -103,14 +98,13 @@
         </section>
 
 
-        <!--Seccion "Nuestro equipo" encargado de mostrar a los integrantes del negocio-->
         <section id="equipo" class="team-section">
             <h2>Nuestro Equipo</h2>
             <div class="team-container">
                 <div class="team-member">
-                    <img src="img/ricardo.jpg" alt="Ricardo, especialista en cortes" width="200" height="200"> <!--Imagen o fotografia de la persona-->
-                    <h3>Ricardo</h3>                                                                       <!--Nombre de la persona-->
-                    <p>Especialista en cortes</p>                                                          <!--Area de especializacion-->
+                    <img src="img/ricardo.jpg" alt="Ricardo, especialista en cortes" width="200" height="200"> 
+                    <h3>Ricardo</h3>                                                                 
+                    <p>Especialista en cortes</p>                                                          
                 </div>
                 <div class="team-member">
                     <img src="img/javier.jpg" alt="Javier, especialista en afeitados" width="200" height="200">
@@ -125,7 +119,6 @@
             </div>
         </section>
 
-        <!--Area de formulario para obtener informacion de potenciales clientes-->
         <section id="contacto"  class="contact-section">
             <h2>Contacto</h2>
             <form class="contact-form">
@@ -149,7 +142,6 @@
         </section>
     </main>
 
-    <!--Pie de pagina con informacion adicional del negocio-->
     <footer class="main-footer">
         <p>
             Vikingos Barber Studio +524616132667

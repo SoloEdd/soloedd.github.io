@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikingos Barber Studio</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../screens/mainsite.html"><img src="../img/vikingoslogo.png" alt="Logo de Vikingos Barber Studio" width="100" height="100"></a><!--Logotipo del negocio-->
+            <ul> 
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#horario">Horario</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#equipo">Equipo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a class = 'btn-reservar' href="reservar.html">Reservar ahora</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero-section" id="reservar">
+            <div class="hero-content">
+                <h1>Vikingos Barber Studio</h1>
+                <p>Donde la tradición se encuentra con el estilo moderno. Experimenta cortes y afeitados de primera clase en un ambiente único.</p>
+                <a href="reservar.html" class="btn-reservar">Reservar Ahora</a>
+            </div>
+        </div>
+
+        <section id= "servicios" class="services-section">
+            <h2>Nuestros Servicios</h2>
+            <dl class="services-list">
+                <div class="service-item">
+                    <dt><h3>Cortes de Pelo</h3></dt>
+                    <dd><p>Cortes de pelo modernos y clásicos adaptados a tu estilo.</p></dd>
+                </div>
+                <div class="service-item">
+                    <dt><h3>Afeitados Clásicos</h3></dt>
+                    <dd><p>Afeitados tradicionales con toallas calientes para una experiencia relajante.</p></dd>
+                </div>
+                <div class="service-item">
+                    <dt><h3>Coloración</h3></dt>
+                    <dd><p>Servicios de coloración para un nuevo look.</p></dd>
+                </div>
+                <div class="service-item">
+                    <dt><h3>Estilismo</h3></dt>
+                    <dd><p>Estilismos profesionales para cualquier ocasión.</p></dd>
+                </div>
+            </dl>
+        </section>
+
+        <section id="horario" class="hours-section">
+            <h2>Horarios de Atención</h2>
+            <table class="schedule-table">
+                <tbody>
+                    <tr>
+                        <th>lunes</th>
+                        <td>11 a.m. - 8 p.m.</td>
+                    </tr>
+                    <tr>
+                        <th>martes</th>
+                        <td>11 a.m. - 8 p.m.</td>
+                    </tr>
+                    <tr>
+                        <th>miércoles</th>
+                        <td>11 a.m. - 8 p.m.</td>
+                    </tr>
+                    <tr>
+                        <th>jueves</th>
+                        <td>11 a.m. - 8 p.m.</td>
+                    </tr>
+                    <tr>
+                        <th>viernes</th>
+                        <td>11 a.m. - 8 p.m.</td>
+                    </tr>
+                    <tr>
+                        <th>sábado</th>
+                        <td>11 a.m. - 8 p.m.</td>
+                    </tr>
+                    <tr>
+                        <th>domingo</th>
+                        <td>Cerrado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="galeria" class="gallery-section">
+            <h2>Galería</h2>
+            <div class="gallery-container">
+                <img src="../img/haircut1.jpg" alt="Wolft cut hombre" width="200" height="200"> <!--el atributo alt relaciona la imagen con el tipo de corte-->
+                <img src="../img/haircut2.jpg" alt="French crop largo " width="200" height="200">
+                <img src="../img/haircut3.jpg" alt="Medium fade texturizado" width="200" height="200">
+            </div>
+        </section>
+
+
+        <section id="equipo" class="team-section">
+            <h2>Nuestro Equipo</h2>
+            <div class="team-container">
+                <div class="team-member">
+                    <img src="../img/ricardo.jpg" alt="Ricardo, especialista en cortes" width="200" height="200"> 
+                    <h3>Ricardo</h3>                                                                 
+                    <p>Especialista en cortes</p>                                                          
+                </div>
+                <div class="team-member">
+                    <img src="../img/javier.jpg" alt="Javier, especialista en afeitados" width="200" height="200">
+                    <h3>Javier</h3>
+                    <p>Especialista en afeitados</p>
+                </div>
+                <div class="team-member">
+                    <img src="../img/carlos.jpg" alt="Carlos, especialista en coloración" width="200" height="200">
+                    <h3>Carlos</h3>
+                    <p>Especialista en coloración</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto"  class="contact-section">
+            <h2>Contacto</h2>
+            <form class="contact-form">
+                <label for="nombre">Nombre</label>
+                <br>
+                <input type="text" id="nombre" name="nombre">
+                <br><br>
+
+                <label for="correo">Correo Electrónico</label>
+                <br>
+                <input type="email" id="correo" name="correo">
+                <br><br>
+
+                <label for="mensaje">Mensaje</label>
+                <br>
+                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                <br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>
+            Vikingos Barber Studio +524616132667
+            <br>
+            Manuel Doblado 226, Col. Centro, 38000
+            <br>
+            Celaya, Gto.
+        </p>
+        <p>Vikingos Barber Studio &copy; 2025. Todos los derechos reservados.</p>
+        <div class="footer-links">
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Términos de Servicio</a>
+        </div>
+    </footer>
+</body>
+</html>

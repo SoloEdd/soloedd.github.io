@@ -29,9 +29,9 @@ html{
     Header y Navegación
     ------------------------------------------------------
 */
-header {
+.header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 10px 50px;
     background-color: #221111;
@@ -42,15 +42,73 @@ header {
     border-bottom: 1px solid #482323;
 }
 
+.header .logo img{
+    height: 100px;
+    width: auto;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+
 header nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: inline-flex;
-    align-items: end;
+    display: flex;
     gap: 20px;
 }
 
+
+/*
+    Media Query para pantallas pequeñas (móviles)
+*/
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .menu-toggle {
+        display: block; /* Muestra el botón de hamburguesa */
+    }
+
+    .nav-links {
+        display: none; /* Oculta el menú por defecto */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Debajo de la barra de navegación */
+        left: 0;
+        background-color: #221111;
+        border-top: 1px solid #482323;
+        z-index: 999;
+    }
+
+    .nav-links.is-active {
+        display: flex; /* Muestra el menú cuando tiene la clase "is-active" */
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        display: block;
+        padding: 15px 0;
+        border-bottom: 1px solid #482323;
+    }
+}
 
 
 header nav li a {

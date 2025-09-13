@@ -7,10 +7,17 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
+        <div class="logo">
+            <a href="mainsite.html">
+                <img src="../img/vikingoslogo.png" alt="Logo de Vikingos Barber Studio">
+            </a>
+        </div>
         <nav>
-            <a href="../screens/mainsite.html"><img src="../img/vikingoslogo.png" alt="Logo de Vikingos Barber Studio" width="100" height="100"></a><!--Logotipo del negocio-->
-            <ul> 
+            <button class="menu-toggle" aria-controls="main-menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="main-menu" class="nav-links"> 
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#horario">Horario</a></li>
                 <li><a href="#galeria">Galería</a></li>
@@ -20,6 +27,7 @@
             </ul>
         </nav>
     </header>
+    <script src="js/menu.js"></script>
 
     <main>
         <div class="hero-section" id="reservar">

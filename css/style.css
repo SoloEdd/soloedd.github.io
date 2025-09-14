@@ -66,6 +66,14 @@ header nav ul {
     gap: 20px;
 }
 
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: #e4c483;
+    cursor: pointer;
+}
 
 /*
     Media Query para pantallas pequeñas (móviles)

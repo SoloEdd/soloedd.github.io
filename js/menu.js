@@ -1,14 +1,10 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
 
-    // Escucha el clic en el botón de hamburguesa
-    menuToggle.addEventListener('click', () => {
-        // Alterna la clase 'is-active' en el menú
+    menuToggle.addEventListener('click', function() {
         navLinks.classList.toggle('is-active');
-        
-        // También cambia el atributo aria-expanded para accesibilidad
-        const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
-        menuToggle.setAttribute('aria-expanded', !isExpanded);
+        // Cambia el aria-expanded para accesibilidad
+        menuToggle.setAttribute('aria-expanded', navLinks.classList.contains('is-active'));
     });
 });

@@ -344,7 +344,7 @@ header nav li a:hover {
 body {
     font-family: 'Space Grotesk', sans-serif;
     height: 100vh;
-    /*overflow: hidden;*/
+    /*overflow: hidden;   oculta el scroll   */ 
 }
 
 .banner-hero {
@@ -579,27 +579,6 @@ body {
     Página de Reservas - Vikingos Barber Studio
     ------------------------------------------------------
 */
-
-.nav-back {
-    display: flex;
-    align-items: center;
-}
-
-.btn-back {
-    background-color: transparent !important;
-    color: #e4c483 !important;
-    border: 1px solid #e4c483;
-    padding: 8px 15px !important;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 14px;
-    transition: all 0.3s;
-}
-
-.btn-back:hover {
-    background-color: #e4c483 !important;
-    color: #221111 !important;
-}
 
 .reservation-main {
     padding-top: 120px; /* Espacio para el header fijo */

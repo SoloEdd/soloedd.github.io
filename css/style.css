@@ -24,23 +24,20 @@ html{
     
 }
 
+/* Estilo para los mensajes de error del formulario */
+.error-message {
+    color: #ff5555;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: block;
+}
+
 /*
     ------------------------------------------------------
     Header y Navegación
     ------------------------------------------------------
 */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 50px;
-    background-color: #221111;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 1px solid #482323;
-}
+
 
 .header .logo img{
     height: 100px;
@@ -50,74 +47,6 @@ html{
 .header .logo{
     cursor: pointer;
 }
-
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10px;
-}
-
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-}
-
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 2em;
-    color: #e4c483;
-    cursor: pointer;
-}
-
-/*
-    Media Query para pantallas pequeñas (móviles)
-*/
-@media (max-width: 768px) {
-    header nav {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-    }
-
-    .menu-toggle {
-        display: block; /* Muestra el botón de hamburguesa */
-    }
-
-    .nav-links {
-        display: none; /* Oculta el menú por defecto */
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px; /* Debajo de la barra de navegación */
-        left: 0;
-        background-color: #221111;
-        border-top: 1px solid #482323;
-        z-index: 999;
-    }
-
-    .nav-links.is-active {
-        display: flex; /* Muestra el menú cuando tiene la clase "is-active" */
-    }
-
-    .nav-links li {
-        width: 100%;
-        text-align: center;
-    }
-
-    .nav-links li a {
-        display: block;
-        padding: 15px 0;
-        border-bottom: 1px solid #482323;
-    }
-}
-
 
 header nav li a {
     text-decoration: none;
@@ -204,15 +133,6 @@ header nav li a:hover {
     margin-bottom: 40px;
 }
 
-.services-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 0;
-}
-
 .service-item {
     background-color: #331919;
     border: 1px solid #673232;
@@ -277,13 +197,6 @@ header nav li a:hover {
     margin-bottom: 30px;
 }
 
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    margin: 0 auto;
-    max-width: 1200px;
-}
 
 .gallery-container img {
     width: 100%;
@@ -431,7 +344,7 @@ header nav li a:hover {
 body {
     font-family: 'Space Grotesk', sans-serif;
     height: 100vh;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .banner-hero {

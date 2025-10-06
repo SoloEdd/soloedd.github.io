@@ -205,6 +205,15 @@ header nav li a:hover {
     border-radius: 5px;
 }
 
+/* Asegura que las imágenes de la galería tengan el mismo tamaño */
+.gallery-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
 /*
     ------------------------------------------------------
     Equipo

@@ -20,8 +20,8 @@
                 <a class="navbar-brand" href="../screens/mainsite.html">
                     <img src="../img/vikingoslogo.png" alt="Logo de Vikingos Barber Studio" height="100">
                 </a>
-                <div class="d-flex ms-auto">
-                    <a href="../screens/mainsite.html" class="btn btn-outline-warning">← Volver al inicio</a>
+                <div class="d-flex ms-auto align-items-center">
+                    <span id="user-display" class="text-white me-3"></span>
                 </div>
             </div>
         </nav>
@@ -45,15 +45,18 @@
                                 <div class="form-group">
                                     <label for="nombre">Nombre Completo *</label>
                                     <input type="text" id="nombre" name="nombre" required>
+                                    <span class="error-message"></span>
                                 </div>
                                 <div class="form-group">
                                     <label for="telefono">Teléfono *</label>
                                     <input type="tel" id="telefono" name="telefono" required>
+                                    <span class="error-message"></span>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="email">Correo Electrónico</label>
                                 <input type="email" id="email" name="email">
+                                <span class="error-message"></span>
                             </div>
                         </div>
 
@@ -71,6 +74,7 @@
                                         <option value="estilismo">Estilismo - $180</option>
                                         <option value="combo-completo">Combo Completo - $400</option>
                                     </select>
+                                    <span class="error-message"></span>
                                 </div>
                                 <div class="form-group">
                                     <label for="barbero">Barbero de Preferencia</label>
@@ -87,6 +91,7 @@
                                 <div class="form-group">
                                     <label for="fecha">Fecha Preferida *</label>
                                     <input type="date" id="fecha" name="fecha" required min="">
+                                    <span class="error-message"></span>
                                 </div>
                                 <div class="form-group">
                                     <label for="hora">Hora Preferida *</label>
@@ -111,6 +116,7 @@
                                         <option value="19:00">7:00 PM</option>
                                         <option value="19:30">7:30 PM</option>
                                     </select>
+                                    <span class="error-message"></span>
                                 </div>
                             </div>
                         </div>
@@ -130,6 +136,7 @@
                                     <span class="checkmark"></span>
                                     Acepto los <a href="#" target="_blank">términos y condiciones</a> y la <a href="#" target="_blank">política de privacidad</a>
                                 </label>
+                                <span class="error-message"></span>
                             </div>
                         </div>
 
@@ -179,24 +186,7 @@
         <p>Vikingos Barber Studio &copy; 2025. Todos los derechos reservados.</p>
     </footer>
 
-    <script>
-        document.getElementById('fecha').min = new Date().toISOString().split('T')[0];
-        
-        document.getElementById('reservationForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            alert('¡Gracias por tu reserva! Te contactaremos pronto para confirmar tu cita.');
-            
-          
-        });
-
-        document.getElementById('fecha').addEventListener('input', function() {
-            const selectedDate = new Date(this.value);
-            if (selectedDate.getDay() === 0) { 
-                alert('Los domingos estamos cerrados. Por favor selecciona otra fecha.');
-                this.value = '';
-            }
-        });
-    </script>
+    <script src="../js/reservacionvalidacion.js"></script>
+    
 </body>
 </html>
